@@ -1,0 +1,117 @@
+﻿  Generating default_hrtf.txt
+  Building Custom Rule C:/jazz3/openal-soft-1.23.1/CMakeLists.txt
+  auxeffectslot.cpp
+  buffer.cpp
+  effect.cpp
+  effects.cpp
+  error.cpp
+  event.cpp
+  extension.cpp
+  filter.cpp
+  listener.cpp
+  source.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(4493,23): warning C4244: "=": Konvertierung von "const ALdouble" in "float", möglicher Datenverlust
+C:\jazz3\openal-soft-1.23.1\al\source.cpp(3114): message : Siehe Verweis auf die gerade kompilierte Instanziierung "_OutIt *std::copy_n<const ALdouble*,ALuint,float*>(_InIt,_Diff,_OutIt)" der Funktions-Vorlage.
+          with
+          [
+              _OutIt=float *,
+              _InIt=const ALdouble *,
+              _Diff=ALuint
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(4493,23): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+C:\jazz3\openal-soft-1.23.1\al\source.cpp(3292): message : Siehe Verweis auf die gerade kompilierte Instanziierung "_OutIt std::copy_n<double*,ALuint,ALfloat*>(_InIt,_Diff,_OutIt)" der Funktions-Vorlage.
+          with
+          [
+              _OutIt=ALfloat *,
+              _InIt=double *,
+              _Diff=ALuint
+          ]
+  state.cpp
+  api.cpp
+  call.cpp
+  exception.cpp
+  fx_slot_index.cpp
+  fx_slots.cpp
+  globals.cpp
+  utils.cpp
+  alc.cpp
+  alu.cpp
+  Code wird generiert...
+  Kompilieren...
+  alconfig.cpp
+  panning.cpp
+  base.cpp
+  loopback.cpp
+  winmm.cpp
+  dsound.cpp
+  wasapi.cpp
+  wave.cpp
+  ambdec.cpp
+  ambidefs.cpp
+  bformatdec.cpp
+  bs2b.cpp
+  bsinc_tables.cpp
+  buffer_storage.cpp
+  converter.cpp
+  cpu_caps.cpp
+  cubic_tables.cpp
+  devformat.cpp
+  effectslot.cpp
+  except.cpp
+  Code wird generiert...
+  Kompilieren...
+  biquad.cpp
+  nfc.cpp
+  splitter.cpp
+  fmt_traits.cpp
+  fpu_ctrl.cpp
+  helpers.cpp
+  hrtf.cpp
+  logging.cpp
+  mastering.cpp
+  mixer.cpp
+  uhjfilter.cpp
+  uiddefs.cpp
+  voice.cpp
+C:\jazz3\openal-soft-1.23.1\core\voice.cpp(299,1): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+C:\jazz3\openal-soft-1.23.1\core\voice.cpp(315,1): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+  mixer_c.cpp
+  mixer_sse.cpp
+  mixer_sse2.cpp
+  mixer_sse3.cpp
+  mixer_sse41.cpp
+  Code wird generiert...
+  autowah.cpp
+  chorus.cpp
+  compressor.cpp
+  convolution.cpp
+  dedicated.cpp
+  distortion.cpp
+  echo.cpp
+  equalizer.cpp
+  fshifter.cpp
+  modulator.cpp
+  null.cpp
+  pshifter.cpp
+  reverb.cpp
+  vmorpher.cpp
+  context.cpp
+  device.cpp
+  autowah.cpp
+  chorus.cpp
+  compressor.cpp
+  convolution.cpp
+  dedicated.cpp
+  distortion.cpp
+  echo.cpp
+  equalizer.cpp
+  fshifter.cpp
+  modulator.cpp
+  null.cpp
+  pshifter.cpp
+  reverb.cpp
+  vmorpher.cpp
+  null.cpp
+  context.cpp
+  device.cpp
+LINK : fatal error LNK1181: Eingabedatei "Release\common.lib" kann nicht geöffnet werden.

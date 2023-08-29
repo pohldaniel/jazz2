@@ -1,0 +1,24 @@
+^C:\JAZZ3\OPENAL-SOFT-1.23.1\BUILD_64\CMAKEFILES\AD161D745E92D7480A2C0FFD3EC7E170\DEFAULT_HRTF.TXT.RULE
+setlocal
+cd C:\jazz3\openal-soft-1.23.1
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D "INPUT_FILE=C:/jazz3/openal-soft-1.23.1/hrtf/Default HRTF.mhr" -D OUTPUT_FILE=C:/jazz3/openal-soft-1.23.1/build_64/default_hrtf.txt -P C:/jazz3/openal-soft-1.23.1/cmake/bin2h.script.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\JAZZ3\OPENAL-SOFT-1.23.1\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/jazz3/openal-soft-1.23.1 -BC:/jazz3/openal-soft-1.23.1/build_64 --check-stamp-file C:/jazz3/openal-soft-1.23.1/build_64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

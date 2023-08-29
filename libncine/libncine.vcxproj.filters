@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{843ce2ec-c8f3-4926-8cdf-2f13ff0062c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Containers">
+      <UniqueIdentifier>{55378f9e-3015-4f0c-bffa-28bffe303ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{98d57d2c-e6f0-4890-85e2-5f4f2ca6f85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{30bd9a76-e691-45e3-b339-b6e17f21e842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{1cfc1bb5-1433-421c-a604-e26c7b1206b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\opengl">
+      <UniqueIdentifier>{cf666869-566c-4976-9295-128f1117e3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{175baf7f-41db-4f33-9077-f89e6e756085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Backends">
+      <UniqueIdentifier>{bc8ad7da-aa97-4427-b55b-c3769aeab8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{d03e6ccf-983b-46d4-a8d0-088e2c5474db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Primitives">
+      <UniqueIdentifier>{3b54598d-fa46-4e97-8a9b-090579c025b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threading">
+      <UniqueIdentifier>{b62ed6c6-1ec3-4211-ada4-90d708e9db1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3a453b47-55e4-45b0-ab5e-05cd5a7aa887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{60b314ad-45ea-4c78-b47f-7a636ea6902a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{956b04bf-3aeb-43c1-8e42-a4480e050d01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{577aa7a5-5943-4cd3-85e0-b20d67e50f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\opengl">
+      <UniqueIdentifier>{7d41d18d-25d9-40e1-b05c-f5a425dffd7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{90162896-868d-41a3-a806-64e77dd3c43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Threading">
+      <UniqueIdentifier>{41b625f0-e1e7-4326-9499-78c639b2c878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scripting">
+      <UniqueIdentifier>{86c156c8-5a67-499e-8039-2a9b6e4fc3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Backends">
+      <UniqueIdentifier>{5dc9dc2c-aaec-4a83-887e-8206638b3f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{a1f7c067-5380-4f92-87fc-3448c0e712c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Primitives">
+      <UniqueIdentifier>{ae886830-b4eb-43e5-824d-5d6396b32767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Containers">
+      <UniqueIdentifier>{a62352c2-8638-4c2f-b2b4-177b61dacd68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{854f2581-a3b3-4553-aff5-46b8d299b665}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayIndexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Asserts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonWindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I18n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAppEventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IIndexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntrinsicsAvx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntrinsicsSse2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntrinsicsSse3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntrinsicsSse4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntrinsicsSsse3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_strings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utf8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Array.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\ArrayView.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\GrowableArray.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Pair.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Reference.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\SmallVector.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\String.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\StringStlView.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\StringView.h">
+      <Filter>Header Files\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\ALAudioDevice.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioBuffer.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioBufferPlayer.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioLoaderMpt.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioLoaderOgg.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioLoaderWav.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioReaderMpt.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioReaderOgg.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioReaderWav.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioStream.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioStreamPlayer.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\IAudioDevice.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\IAudioLoader.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\IAudioPlayer.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\IAudioReader.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Algorithms.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\BitArray.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\BitSet.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Clock.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\FrameTimer.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\HashFunctions.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\HashMap.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Iterator.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Object.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Random.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ReverseIterator.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StaticHashMap.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StaticHashMapIterator.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Task.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Timer.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\TimeStamp.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AnimatedSprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\BaseSprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\BinaryShaderCache.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Camera.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DisplayMode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DrawableNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Geometry.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GfxCapabilities.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\IGfxCapabilities.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\IGfxDevice.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ITextureLoader.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ITextureSaver.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Material.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\MeshSprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Particle.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ParticleAffectors.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ParticleInitializer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ParticleSystem.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RectAnimation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderBatcher.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderBuffersManager.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderCommand.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderCommandPool.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderDocCapture.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderQueue.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderResources.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderStatistics.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderVaoPool.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\SceneNode.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ScreenViewport.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ShaderState.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Sprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureFormat.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderDds.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderKtx.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderPkm.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderPng.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderPvr.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderQoi.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderRaw.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureLoaderWebP.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureSaverPng.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureSaverWebP.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Viewport.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLAttribute.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLBlending.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLBufferObject.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLClearColor.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLCullFace.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLDebug.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLDepthTest.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLFramebuffer.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLHashMap.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLRenderbuffer.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLScissorTest.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLShader.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLShaderProgram.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLShaderUniformBlocks.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLShaderUniforms.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLTexture.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLUniform.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLUniformBlock.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLUniformBlockCache.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLUniformCache.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLVertexArrayObject.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLVertexFormat.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GL\GLViewport.h">
+      <Filter>Header Files\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\IInputEventHandler.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\IInputManager.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputEvents.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\JoyMapping.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\JoyMappingDb.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keys.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Backends\GlfwGfxDevice.h">
+      <Filter>Header Files\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Backends\GlfwInputManager.h">
+      <Filter>Header Files\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\AndroidAssetStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\CompressionUtils.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileSystem.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\HttpRequest.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\MemoryStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Stream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\AABB.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Color.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Colorf.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Matrix4x4.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Quaternion.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Rect.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector2.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector3.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\Vector4.h">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\Atomic.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\IThreadCommand.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\IThreadPool.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\Thread.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\ThreadPool.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Threading\ThreadSync.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppConfiguration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayIndexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="I18n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_strings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utf8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\ALAudioDevice.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioBuffer.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioBufferPlayer.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioLoaderMpt.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioLoaderWav.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioReaderMpt.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioReaderWav.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioStream.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioStreamPlayer.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\IAudioLoader.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\IAudioPlayer.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Algorithms.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\BitArray.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Clock.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\FrameTimer.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\HashFunctions.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Object.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Random.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Timer.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\TimeStamp.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AnimatedSprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\BaseSprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\BinaryShaderCache.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Camera.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DrawableNode.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Geometry.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GfxCapabilities.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\IGfxDevice.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ITextureLoader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ITextureSaver.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Material.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\MeshSprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Particle.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ParticleAffectors.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ParticleInitializer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ParticleSystem.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RectAnimation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderBatcher.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderBuffersManager.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderCommand.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderCommandPool.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderDocCapture.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderQueue.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderResources.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderStatistics.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderVaoPool.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\SceneNode.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ScreenViewport.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ShaderState.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Sprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureFormat.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderDds.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderKtx.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderPkm.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderPng.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderPvr.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderQoi.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderRaw.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureLoaderWebP.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureSaverPng.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureSaverWebP.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Viewport.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLAttribute.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLBlending.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLBufferObject.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLClearColor.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLCullFace.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLDebug.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLDepthTest.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLFramebuffer.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLRenderbuffer.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLScissorTest.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLShader.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLShaderProgram.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLShaderUniformBlocks.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLShaderUniforms.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLTexture.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLUniform.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLUniformBlock.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLUniformBlockCache.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLUniformCache.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLVertexArrayObject.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLVertexFormat.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GL\GLViewport.cpp">
+      <Filter>Source Files\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\IInputManager.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\JoyMapping.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\ThreadPool.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\WindowsAtomic.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\WindowsThread.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Threading\WindowsThreadSync.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Backends\GlfwGfxDevice.cpp">
+      <Filter>Source Files\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="Backends\GlfwInputManager.cpp">
+      <Filter>Source Files\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="Backends\GlfwKeys.cpp">
+      <Filter>Source Files\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\AndroidAssetStream.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\CompressionUtils.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FileStream.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FileSystem.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\MemoryStream.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Color.cpp">
+      <Filter>Source Files\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\Colorf.cpp">
+      <Filter>Source Files\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers\SmallVector.cpp">
+      <Filter>Source Files\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers\String.cpp">
+      <Filter>Source Files\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers\StringView.cpp">
+      <Filter>Source Files\Containers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

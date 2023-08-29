@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{1738ad79-6bf8-4e97-a8b8-7135742ddca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sounddsp">
+      <UniqueIdentifier>{de2bdf55-8e2a-448e-9002-e00da0a19046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soundlib">
+      <UniqueIdentifier>{663b54eb-6dd6-44ec-bcae-59a7d79e46ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soundlib\plugins">
+      <UniqueIdentifier>{c7ab2f42-98b5-4879-82e1-c6e5065f1453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soundlib\plugins\dmo">
+      <UniqueIdentifier>{68f8827b-cf6a-4499-bde1-14bc52107cc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libopenmpt\common\BuildSettings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\ComponentManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\Dither.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\FileReader.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\FileReaderFwd.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\Logging.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\misc_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptAssert.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptBaseMacros.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptBaseTypes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptBaseUtils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptCPU.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptFileIO.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptFileTemporary.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptFileType.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptPathString.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptRandom.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptString.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptStringBuffer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptStringFormat.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\mptTime.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\Profiler.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\serialization_utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\stdafx.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\version.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\common\versionNumber.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\sounddsp\AGC.h">
+      <Filter>sounddsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\sounddsp\DSP.h">
+      <Filter>sounddsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\sounddsp\EQ.h">
+      <Filter>sounddsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\sounddsp\Reverb.h">
+      <Filter>sounddsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Chorus.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Compressor.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Distortion.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\DMOPlugin.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\DMOUtils.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Echo.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Flanger.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\Gargle.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\I3DL2Reverb.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\ParamEq.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\dmo\WavesReverb.h">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\DigiBoosterEcho.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\LFOPlugin.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\OpCodes.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\PluginManager.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\PluginMixBuffer.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\PluginStructs.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\PlugInterface.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\plugins\SymMODEcho.h">
+      <Filter>soundlib\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\AudioCriticalSection.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\AudioReadTarget.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\BitReader.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Container.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Dlsbank.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\FloatMixer.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\IntMixer.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ITCompression.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ITTools.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Loaders.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Message.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MIDIEvents.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MIDIMacros.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Mixer.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MixerInterface.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MixerLoops.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MixerSettings.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MixFuncTable.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\mod_specifications.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ModChannel.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\modcommand.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ModInstrument.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ModSample.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ModSampleCopy.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\ModSequence.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\modsmp_ctrl.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\MPEGFrame.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\OggStream.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\opal.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\OPL.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\pattern.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\patternContainer.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Paula.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Resampler.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\RowVisitor.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\S3MTools.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\SampleCopy.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\SampleIO.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\SampleNormalize.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Snd_defs.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Sndfile.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\SoundFilePlayConfig.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Tables.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\Tagging.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\TinyFFT.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\tuning.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\tuningbase.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\tuningcollection.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\UMXTools.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\WAVTools.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\WindowedFIR.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\soundlib\XMTools.h">
+      <Filter>soundlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_ext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_ext_impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_impl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_fd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_file_mingw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_file_msvcrt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_file_posix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_stream_callbacks_file_posix_lfs64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libopenmpt\libopenmpt\libopenmpt_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libopenmpt\common\ComponentManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\Logging.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptFileIO.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptFileTemporary.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptFileType.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptPathString.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptRandom.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptStringBuffer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\mptTime.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\Profiler.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\serialization_utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\common\version.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\sounddsp\AGC.cpp">
+      <Filter>sounddsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\sounddsp\DSP.cpp">
+      <Filter>sounddsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\sounddsp\EQ.cpp">
+      <Filter>sounddsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\sounddsp\Reverb.cpp">
+      <Filter>sounddsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Chorus.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Compressor.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Distortion.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\DMOPlugin.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\DMOUtils.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Echo.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Flanger.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\Gargle.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\I3DL2Reverb.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\ParamEq.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\dmo\WavesReverb.cpp">
+      <Filter>soundlib\plugins\dmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\DigiBoosterEcho.cpp">
+      <Filter>soundlib\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\LFOPlugin.cpp">
+      <Filter>soundlib\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\PluginManager.cpp">
+      <Filter>soundlib\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\PlugInterface.cpp">
+      <Filter>soundlib\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\plugins\SymMODEcho.cpp">
+      <Filter>soundlib\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\AudioCriticalSection.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ContainerMMCMP.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ContainerPP20.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ContainerUMX.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ContainerXPK.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Dlsbank.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Fastmix.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\InstrumentExtensions.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ITCompression.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ITTools.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_667.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_669.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_amf.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_ams.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_c67.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_dbm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_digi.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_dmf.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_dsm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_dsym.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_dtm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_far.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_fmt.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_gdm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_gt2.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_imf.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_it.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_itp.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\load_j2b.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mdl.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_med.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mid.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mo3.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mod.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mt2.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mtm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_mus_km.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_okt.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_plm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_psm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_ptm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_s3m.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_sfx.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_stm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_stp.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_symmod.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_uax.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_ult.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_wav.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_xm.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Load_xmf.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Message.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MIDIEvents.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MIDIMacros.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MixerLoops.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MixerSettings.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MixFuncTable.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\mod_specifications.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ModChannel.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\modcommand.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ModInstrument.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ModSample.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\ModSequence.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\modsmp_ctrl.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\MPEGFrame.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\OggStream.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\OPL.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\pattern.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\patternContainer.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Paula.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\RowVisitor.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\S3MTools.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatBRR.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatFLAC.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatMediaFoundation.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatMP3.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatOpus.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormats.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatSFZ.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleFormatVorbis.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SampleIO.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Snd_flt.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Snd_fx.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Sndfile.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Sndmix.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\SoundFilePlayConfig.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Tables.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\Tagging.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\TinyFFT.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\tuning.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\tuningCollection.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\UMXTools.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\UpgradeModule.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\WAVTools.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\WindowedFIR.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\soundlib\XMTools.cpp">
+      <Filter>soundlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\libopenmpt\libopenmpt_c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\libopenmpt\libopenmpt_cxx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\libopenmpt\libopenmpt_ext_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libopenmpt\libopenmpt\libopenmpt_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

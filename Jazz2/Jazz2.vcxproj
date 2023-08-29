@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CD61DCB-ED56-46AB-ADBD-40E6E3B9CC85}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Jazz2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_BUILD;DEATH_LOGGING;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;GLFW_NO_GLU;AL_LIBTYPE_STATIC;GLEW_STATIC;WITH_GLEW;WITH_GLFW;WITH_AUDIO;WITH_THREADS;WITH_LIBDEFLATE;WITH_EMBEDDED_SHADERS;WITH_OPENMPT;MPT_WITH_MPG123;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libncine;..\libncine\include;..\libncine\src\include;..\libncine\src\include\ncine;..\libglew;..\libdeflate\include;..\libopenmpt\libopenmpt;..\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libncine.lib;glew.lib;glfw3.lib;deflate.lib;openal.lib;openmpt.lib;OpenGL32.lib;winmm.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;CMAKE_BUILD;DEATH_LOGGING;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;GLFW_NO_GLU;AL_LIBTYPE_STATIC;GLEW_STATIC;WITH_GLEW;WITH_GLFW;WITH_AUDIO;WITH_THREADS;WITH_LIBDEFLATE;WITH_EMBEDDED_SHADERS;WITH_OPENMPT;MPT_WITH_MPG123;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libncine;..\libncine\include;..\libncine\src\include;..\libncine\src\include\ncine;..\libglew;..\libdeflate\include;..\libopenmpt\libopenmpt;..\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libncine.lib;glew.lib;glfw3.lib;deflate.lib;openal.lib;openmpt.lib;OpenGL32.lib;winmm.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CMAKE_BUILD;DEATH_LOGGING;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;GLFW_NO_GLU;AL_LIBTYPE_STATIC;GLEW_STATIC;WITH_GLEW;WITH_GLFW;WITH_AUDIO;WITH_THREADS;WITH_LIBDEFLATE;WITH_EMBEDDED_SHADERS;WITH_OPENMPT;MPT_WITH_MPG123;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libncine;..\libncine\include;..\libncine\src\include;..\libncine\src\include\ncine;..\libglew;..\libdeflate\include;..\libopenmpt\libopenmpt;..\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libncine.lib;glew.lib;glfw3.lib;deflate.lib;openal.lib;openmpt.lib;OpenGL32.lib;winmm.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;NCINE_VERSION="2.1.r462-4be43dc";CMAKE_BUILD;DEATH_LOGGING;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;GLFW_NO_GLU;AL_LIBTYPE_STATIC;GLEW_STATIC;WITH_GLEW;WITH_GLFW;WITH_AUDIO;WITH_THREADS;WITH_LIBDEFLATE;WITH_EMBEDDED_SHADERS;WITH_OPENMPT;MPT_WITH_MPG123;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\libncine;..\libncine\include;..\libncine\src\include;..\libncine\src\include\ncine;..\libglew;..\libdeflate\include;..\libopenmpt\libopenmpt;..\vorbis\include;..\ogg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libncine.lib;glew.lib;glfw3.lib;deflate.lib;openal.lib;openmpt.lib;OpenGL32.lib;winmm.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Jazz2\Actors\ActorBase.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\AmmoCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\CarrotCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\CarrotFlyCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\CarrotInvincibleCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\CoinCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\CollectibleBase.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\FastFireCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\FoodCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\GemCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\GemGiant.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\GemRing.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\OneUpCollectible.h" />
+    <ClInclude Include="Jazz2\Actors\Collectibles\Stopwatch.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bat.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bee.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Bilsy.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Bolly.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\BossBase.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Bubba.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Devan.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\DevanRemote.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Queen.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Robot.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\TurtleBoss.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Bosses\Uterus.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Caterpillar.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Crab.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Demon.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Doggy.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Dragon.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Dragonfly.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\EnemyBase.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\FatChick.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Fencer.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Fish.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Helmut.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\LabRat.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Lizard.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\LizardFloat.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\MadderHatter.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Monkey.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Rapier.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Raven.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Skeleton.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Sparks.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Sucker.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\SuckerFloat.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Turtle.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\TurtleShell.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\TurtleTough.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\TurtleTube.h" />
+    <ClInclude Include="Jazz2\Actors\Enemies\Witch.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\AirboardGenerator.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\AmbientBubbles.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\AmbientSound.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Bird.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\BirdCage.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Bomb.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\BonusWarp.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Checkpoint.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Copter.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\EndOfLevel.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Eva.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\IceBlock.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Moth.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\RollingRock.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\Spring.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\SteamNote.h" />
+    <ClInclude Include="Jazz2\Actors\Environment\SwingingVine.h" />
+    <ClInclude Include="Jazz2\Actors\Explosion.h" />
+    <ClInclude Include="Jazz2\Actors\Lighting\FlickerLight.h" />
+    <ClInclude Include="Jazz2\Actors\Lighting\PulsatingRadialLight.h" />
+    <ClInclude Include="Jazz2\Actors\Lighting\StaticRadialLight.h" />
+    <ClInclude Include="Jazz2\Actors\Player.h" />
+    <ClInclude Include="Jazz2\Actors\PlayerCorpse.h" />
+    <ClInclude Include="Jazz2\Actors\SolidObjectBase.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\AmmoBarrel.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\AmmoCrate.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\BarrelContainer.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\Bridge.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\CrateContainer.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\GemBarrel.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\GemCrate.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\GenericContainer.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\MovingPlatform.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PinballBumper.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PinballPaddle.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\Pole.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PowerUpMorphMonitor.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PowerUpShieldMonitor.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PowerUpWeaponMonitor.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\PushableBox.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\SpikeBall.h" />
+    <ClInclude Include="Jazz2\Actors\Solid\TriggerCrate.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\BlasterShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\BouncerShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ElectroShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\FreezerShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\PepperShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\RFShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\SeekerShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ShieldFireShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ShieldLightningShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ShieldWaterShot.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ShotBase.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\Thunderbolt.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\TNT.h" />
+    <ClInclude Include="Jazz2\Actors\Weapons\ToasterShot.h" />
+    <ClInclude Include="Jazz2\AnimState.h" />
+    <ClInclude Include="Jazz2\Collisions\DynamicTree.h" />
+    <ClInclude Include="Jazz2\Collisions\DynamicTreeBroadPhase.h" />
+    <ClInclude Include="Jazz2\Compatibility\AnimSetMapping.h" />
+    <ClInclude Include="Jazz2\Compatibility\EventConverter.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Anims.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Anims.Palettes.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Block.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Data.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Episode.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Event.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Level.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Strings.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Tileset.h" />
+    <ClInclude Include="Jazz2\Compatibility\JJ2Version.h" />
+    <ClInclude Include="Jazz2\ContentResolver.h" />
+    <ClInclude Include="Jazz2\ContentResolver.Shaders.h" />
+    <ClInclude Include="Jazz2\Events\EventMap.h" />
+    <ClInclude Include="Jazz2\Events\EventSpawner.h" />
+    <ClInclude Include="Jazz2\EventType.h" />
+    <ClInclude Include="Jazz2\ExitType.h" />
+    <ClInclude Include="Jazz2\GameDifficulty.h" />
+    <ClInclude Include="Jazz2\ILevelHandler.h" />
+    <ClInclude Include="Jazz2\IRootController.h" />
+    <ClInclude Include="Jazz2\IStateHandler.h" />
+    <ClInclude Include="Jazz2\LevelHandler.h" />
+    <ClInclude Include="Jazz2\LevelInitialization.h" />
+    <ClInclude Include="Jazz2\LightEmitter.h" />
+    <ClInclude Include="Jazz2\PitType.h" />
+    <ClInclude Include="Jazz2\PlayerActions.h" />
+    <ClInclude Include="Jazz2\PlayerType.h" />
+    <ClInclude Include="Jazz2\PreferencesCache.h" />
+    <ClInclude Include="Jazz2\Scripting\FindAngelScript.h" />
+    <ClInclude Include="Jazz2\Scripting\JJ2PlusDefinitions.h" />
+    <ClInclude Include="Jazz2\Scripting\LevelScriptLoader.h" />
+    <ClInclude Include="Jazz2\Scripting\RegisterArray.h" />
+    <ClInclude Include="Jazz2\Scripting\RegisterDictionary.h" />
+    <ClInclude Include="Jazz2\Scripting\RegisterRef.h" />
+    <ClInclude Include="Jazz2\Scripting\RegisterString.h" />
+    <ClInclude Include="Jazz2\Scripting\ScriptActorWrapper.h" />
+    <ClInclude Include="Jazz2\Scripting\ScriptLoader.h" />
+    <ClInclude Include="Jazz2\Scripting\ScriptPlayerWrapper.h" />
+    <ClInclude Include="Jazz2\ShieldType.h" />
+    <ClInclude Include="Jazz2\Tiles\TileMap.h" />
+    <ClInclude Include="Jazz2\Tiles\TileSet.h" />
+    <ClInclude Include="Jazz2\UI\Alignment.h" />
+    <ClInclude Include="Jazz2\UI\Canvas.h" />
+    <ClInclude Include="Jazz2\UI\Cinematics.h" />
+    <ClInclude Include="Jazz2\UI\ControlScheme.h" />
+    <ClInclude Include="Jazz2\UI\DiscordRpcClient.h" />
+    <ClInclude Include="Jazz2\UI\Font.h" />
+    <ClInclude Include="Jazz2\UI\HUD.h" />
+    <ClInclude Include="Jazz2\UI\Menu\AboutSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\BeginSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\ControlsOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\CustomLevelSelectSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\EpisodeSelectSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\GameplayEnhancementsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\GameplayOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\GraphicsOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\IMenuContainer.h" />
+    <ClInclude Include="Jazz2\UI\Menu\ImportSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\InGameMenu.h" />
+    <ClInclude Include="Jazz2\UI\Menu\InputDiagnosticsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\LanguageSelectSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\MainMenu.h" />
+    <ClInclude Include="Jazz2\UI\Menu\MenuSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\OptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\PauseSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\RefreshCacheSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\RemapControlsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\RescaleModeSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\ScrollableMenuSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\SimpleMessageSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\SoundsOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\StartGameOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\Menu\TouchControlsOptionsSection.h" />
+    <ClInclude Include="Jazz2\UI\RgbLights.h" />
+    <ClInclude Include="Jazz2\UI\UpscaleRenderPass.h" />
+    <ClInclude Include="Jazz2\WeaponType.h" />
+    <ClInclude Include="Jazz2\WeatherType.h" />
+    <ClInclude Include="simdjson\simdjson.h" />
+    <ClInclude Include="TermLogo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Jazz2\Actors\ActorBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\AmmoCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\CarrotCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\CarrotFlyCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\CarrotInvincibleCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\CoinCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\CollectibleBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\FastFireCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\FoodCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\GemCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\GemGiant.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\GemRing.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\OneUpCollectible.cpp" />
+    <ClCompile Include="Jazz2\Actors\Collectibles\Stopwatch.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bat.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bee.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Bilsy.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Bolly.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\BossBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Bubba.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Devan.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\DevanRemote.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Queen.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Robot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\TurtleBoss.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Bosses\Uterus.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Caterpillar.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Crab.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Demon.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Doggy.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Dragon.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Dragonfly.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\EnemyBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\FatChick.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Fencer.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Fish.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Helmut.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\LabRat.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Lizard.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\LizardFloat.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\MadderHatter.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Monkey.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Rapier.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Raven.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Skeleton.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Sparks.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Sucker.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\SuckerFloat.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Turtle.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\TurtleShell.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\TurtleTough.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\TurtleTube.cpp" />
+    <ClCompile Include="Jazz2\Actors\Enemies\Witch.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\AirboardGenerator.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\AmbientBubbles.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\AmbientSound.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Bird.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\BirdCage.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Bomb.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\BonusWarp.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Checkpoint.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Copter.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\EndOfLevel.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Eva.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\IceBlock.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Moth.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\RollingRock.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\Spring.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\SteamNote.cpp" />
+    <ClCompile Include="Jazz2\Actors\Environment\SwingingVine.cpp" />
+    <ClCompile Include="Jazz2\Actors\Explosion.cpp" />
+    <ClCompile Include="Jazz2\Actors\Lighting\FlickerLight.cpp" />
+    <ClCompile Include="Jazz2\Actors\Lighting\PulsatingRadialLight.cpp" />
+    <ClCompile Include="Jazz2\Actors\Lighting\StaticRadialLight.cpp" />
+    <ClCompile Include="Jazz2\Actors\Player.cpp" />
+    <ClCompile Include="Jazz2\Actors\PlayerCorpse.cpp" />
+    <ClCompile Include="Jazz2\Actors\SolidObjectBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\AmmoBarrel.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\AmmoCrate.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\BarrelContainer.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\Bridge.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\CrateContainer.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\GemBarrel.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\GemCrate.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\GenericContainer.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\MovingPlatform.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PinballBumper.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PinballPaddle.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\Pole.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PowerUpMorphMonitor.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PowerUpShieldMonitor.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PowerUpWeaponMonitor.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\PushableBox.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\SpikeBall.cpp" />
+    <ClCompile Include="Jazz2\Actors\Solid\TriggerCrate.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\BlasterShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\BouncerShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ElectroShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\FreezerShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\PepperShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\RFShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\SeekerShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ShieldFireShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ShieldLightningShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ShieldWaterShot.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ShotBase.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\Thunderbolt.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\TNT.cpp" />
+    <ClCompile Include="Jazz2\Actors\Weapons\ToasterShot.cpp" />
+    <ClCompile Include="Jazz2\Collisions\DynamicTree.cpp" />
+    <ClCompile Include="Jazz2\Collisions\DynamicTreeBroadPhase.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\AnimSetMapping.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\EventConverter.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Anims.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Block.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Data.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Episode.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Level.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Strings.cpp" />
+    <ClCompile Include="Jazz2\Compatibility\JJ2Tileset.cpp" />
+    <ClCompile Include="Jazz2\ContentResolver.cpp" />
+    <ClCompile Include="Jazz2\Events\EventMap.cpp" />
+    <ClCompile Include="Jazz2\Events\EventSpawner.cpp" />
+    <ClCompile Include="Jazz2\LevelHandler.cpp" />
+    <ClCompile Include="Jazz2\PreferencesCache.cpp" />
+    <ClCompile Include="Jazz2\Scripting\JJ2PlusDefinitions.cpp" />
+    <ClCompile Include="Jazz2\Scripting\LevelScriptLoader.cpp" />
+    <ClCompile Include="Jazz2\Scripting\RegisterArray.cpp" />
+    <ClCompile Include="Jazz2\Scripting\RegisterDictionary.cpp" />
+    <ClCompile Include="Jazz2\Scripting\RegisterRef.cpp" />
+    <ClCompile Include="Jazz2\Scripting\RegisterString.cpp" />
+    <ClCompile Include="Jazz2\Scripting\ScriptActorWrapper.cpp" />
+    <ClCompile Include="Jazz2\Scripting\ScriptLoader.cpp" />
+    <ClCompile Include="Jazz2\Scripting\ScriptPlayerWrapper.cpp" />
+    <ClCompile Include="Jazz2\Tiles\TileMap.cpp" />
+    <ClCompile Include="Jazz2\Tiles\TileSet.cpp" />
+    <ClCompile Include="Jazz2\UI\Canvas.cpp" />
+    <ClCompile Include="Jazz2\UI\Cinematics.cpp" />
+    <ClCompile Include="Jazz2\UI\ControlScheme.cpp" />
+    <ClCompile Include="Jazz2\UI\DiscordRpcClient.cpp" />
+    <ClCompile Include="Jazz2\UI\Font.cpp" />
+    <ClCompile Include="Jazz2\UI\HUD.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\AboutSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\BeginSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\ControlsOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\CustomLevelSelectSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\EpisodeSelectSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\GameplayEnhancementsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\GameplayOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\GraphicsOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\ImportSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\InGameMenu.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\InputDiagnosticsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\LanguageSelectSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\MainMenu.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\OptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\PauseSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\RefreshCacheSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\RemapControlsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\RescaleModeSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\SimpleMessageSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\SoundsOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\StartGameOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\Menu\TouchControlsOptionsSection.cpp" />
+    <ClCompile Include="Jazz2\UI\RgbLights.cpp" />
+    <ClCompile Include="Jazz2\UI\UpscaleRenderPass.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="simdjson\simdjson.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

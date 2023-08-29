@@ -1,0 +1,16 @@
+﻿  adler32.c
+  crc32.c
+  deflate_compress.c
+  deflate_decompress.c
+  gzip_compress.c
+  gzip_decompress.c
+  utils.c
+  cpu_features.c
+  zlib_compress.c
+  zlib_decompress.c
+     Creating library ..\lib\x64\deflate.lib and object ..\lib\x64\deflate.exp
+  Generating code
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 181 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  deflate.vcxproj -> C:\jazz3\lib\x64\deflate.dll
